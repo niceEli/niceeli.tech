@@ -14,7 +14,6 @@ export default function Post({slug}: {slug: string}) {
   }
 
   const getMastodonLink = () => {
-    console.log(post);
     if (!post.mastodon) {
       return;
     }

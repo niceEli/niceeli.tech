@@ -14,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-screen h-screen flex flex-col subpixel-antialiased overflow-x-hidden">
+      <body className="w-dvw h-dvh flex flex-col subpixel-antialiased overflow-hidden">
         <a rel="me" href="https://mastodon.gamedev.place/@niceEli" className="hidden">Mastodon</a>
         <header className="sticky z-10 top-0 bg-base-200 flex p-1.5 items-center w-full justify-normal space-x-2">
-          <div>
+        <div>
             <ul className="menu menu-horizontal text-right">
               <li>
                 <details>
@@ -60,8 +60,6 @@ export default function RootLayout({
         <div className="h-full w-full overflow-auto">
           {children}
         </div>
-        <footer className="footer bg-base-200">
-        </footer>
       </body>
     </html>
   );
